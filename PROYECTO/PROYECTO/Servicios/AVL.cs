@@ -2,16 +2,16 @@
 
 namespace PROYECTO.Servicios
 {
-    public class AVL
+    public static class AVL
     {
-      public NodoArbolAVL raiz { get; set; }
+      public static NodoArbolAVL raiz { get; set; }
 
-        public void InsertarDatosAVL(Paciente InfoPac)
+        public static void InsertarDatosAVL(Paciente InfoPac)
         {
             raiz = Insertardpi(raiz, InfoPac);
         }
 
-        public  NodoArbolAVL Insertardpi(NodoArbolAVL nodo, Paciente InfoPac)
+        public  static NodoArbolAVL Insertardpi(NodoArbolAVL nodo, Paciente InfoPac)
         {
             if (nodo == null)
             {
@@ -56,7 +56,7 @@ namespace PROYECTO.Servicios
         }
 
 
-        private int ObtenerAltura(NodoArbolAVL nodo)
+        private static int ObtenerAltura(NodoArbolAVL nodo)
         {
             if (nodo == null)
             {
@@ -64,7 +64,7 @@ namespace PROYECTO.Servicios
             }
             return nodo.Altura;
         }
-        private int BalanceoArbol(NodoArbolAVL nodo)
+        private static int BalanceoArbol(NodoArbolAVL nodo)
         {
             if (nodo == null)
             {
@@ -73,7 +73,7 @@ namespace PROYECTO.Servicios
             return ObtenerAltura(nodo.izquierda) - ObtenerAltura(nodo.derecha);
         }
 
-        public List<Paciente> InOrderAVL(NodoArbolAVL nodoActual)
+        public static List<Paciente> InOrderAVL(NodoArbolAVL nodoActual)
         {
             List<Paciente> nodosInOrder = new List<Paciente>();
 
@@ -87,7 +87,7 @@ namespace PROYECTO.Servicios
             return nodosInOrder;
         }
 
-        private NodoArbolAVL RotacionDerecha(NodoArbolAVL y)
+        private static NodoArbolAVL RotacionDerecha(NodoArbolAVL y)
         {
             NodoArbolAVL x = y.izquierda;
             NodoArbolAVL T2 = x.derecha;
@@ -100,7 +100,7 @@ namespace PROYECTO.Servicios
 
             return x;
         }
-        private NodoArbolAVL RotacionIzquierda(NodoArbolAVL x)
+        private static NodoArbolAVL RotacionIzquierda(NodoArbolAVL x)
         {
             NodoArbolAVL y = x.derecha;
             NodoArbolAVL T2 = y.izquierda;

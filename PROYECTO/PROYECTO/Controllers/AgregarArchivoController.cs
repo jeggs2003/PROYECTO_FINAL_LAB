@@ -11,7 +11,6 @@ namespace PROYECTO.Controllers
     {
 
 
-        public static AVL arbolavl = new AVL();
         public static List<Paciente> LISTADOPAC = new List<Paciente>();
 
         public Paciente RegistrarPacienteArc(string Nombre, string DPI, int Edad, int Tel, DateTime Fu, DateTime Fp, string Tratamiento, string Modalidad)
@@ -72,11 +71,11 @@ namespace PROYECTO.Controllers
 
             for (int i = 0; i < LISTADOPAC.Count(); i++)
             {
-                arbolavl.InsertarDatosAVL(LISTADOPAC[i]);
+                AVL.InsertarDatosAVL(LISTADOPAC[i]);
             }
 
             List<Paciente> listaordenada = new List<Paciente>();
-            listaordenada = arbolavl.InOrderAVL(arbolavl.raiz);
+            listaordenada = AVL.InOrderAVL(AVL.raiz);
             return View("IngresoInformacion", listaordenada);
 
         }
