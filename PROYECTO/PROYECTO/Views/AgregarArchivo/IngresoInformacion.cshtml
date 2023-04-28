@@ -1,0 +1,58 @@
+﻿@model List<Paciente>
+
+@{
+    ViewBag.Title = "Ingreso de Pacientes";
+}
+<h1>@ViewData["Title"]</h1>
+@using (Html.BeginForm("IngresoInformacion", "AgregarArchivo", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+	<label> Cargar Archivo </label>
+
+	<input type="file" name="archivo" />
+	//Name = Nombre del parametro
+
+	<input type="submit" , value="Enviar" />
+
+	@if (Model != null)
+	{
+		<table class="table table-hover">
+
+			<thead>
+
+				<tr>
+
+					<td>Nombre Completo</td>
+					<td>Numero DPI</td>
+					<td>Edad</td>
+					<td>Telefono</td>
+					<td>Ultima Consulta</td>
+					<td>Proxima Consulta</td>
+					<td>Tratamiento</td>
+					<td>Modalidad</td>
+
+				</tr>
+
+			</thead>
+
+			@foreach (var PacienteActual in Model)
+
+			{
+				<tr>
+					<td>@PacienteActual.Nombre_Comp</td>
+					<td>@PacienteActual.Num_DPI</td>
+					<td>@PacienteActual.Edad</td>
+					<td>@PacienteActual.Telefono</td>
+					<td>@PacienteActual.UltimaConsulta</td>
+					<td>@PacienteActual.ProxConsulta</td>
+					<td>@PacienteActual.Tratamiento</td>
+					<td>@PacienteActual.modalidad</td>
+
+				</tr>
+
+			}
+		</table>
+
+	}
+
+}
