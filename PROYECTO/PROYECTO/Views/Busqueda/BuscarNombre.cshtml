@@ -1,6 +1,6 @@
 ﻿@model List<Paciente>
 @{
-	ViewBag.Title = "Editar Fecha Proxima Consulta Pacientes";
+	ViewBag.Title = "Busqueda de Pacientes Mediante Nombre";
 }
 <h1>@ViewData["Title"]</h1>
 
@@ -20,6 +20,7 @@
 				<td>Proxima Consulta</td>
 				<td>Tratamiento</td>
 				<td>Modalidad</td>
+				<td>Editar Fecha de Proxima Consulta</td>
 
 			</tr>
 
@@ -37,6 +38,9 @@
 				<td>@PacienteActual.ProxConsulta</td>
 				<td>@PacienteActual.Tratamiento</td>
 				<td>@PacienteActual.modalidad</td>
+				<td>
+					<a asp-action="EditarFechaNombre" asp-controller="Busqueda" ASP class="btn btn-primary btn-sm">Editar</a>
+				</td>
 			</tr>
 
 		}
@@ -44,48 +48,10 @@
 
 }
 
-<form method="post" action="@Url.Action("EditarFecha", "Busqueda")">
-	<table border="1" cellpadding="5" cellspacing="1" >
-		<tr>
-			<td>
-				Dato de Referencia
-			</td>
-			<td>
-				Ingresa Dato de Referencia
-			</td>
-			<td>
-				Ingresa Fecha de Nueva Consulta
-			</td>
-			<td>
-				Edita
-			</td>
-		</tr>
-
-		<tr>
-			<td>
-				DPI
-			</td>
-			<td>
-				<input type="text" id="DPI" name="DPI" />
-				<input type="hidden" id="buscadoOculto" name="DPI" value="" />
-			</td>
-			<td>
-				<input type="datetime" id="FechaNueva" name="FechaNueva" />
-				<input type="hidden" id="buscadoOculto" name="FechaNueva" value="" />
-			</td>
-			<td>
-				<button type="submit" id="Btn1" name="Btn1">Editar Informacion</button>
-			</td>
-		</tr>
-
-	</table>
-	<h4></h4>
-	
-
-	
-
-	
-	
+<form method="post" action="@Url.Action("BuscarNombre", "Busqueda")">
+	<input type="text" id="Nombre" name="Nombre" />
+	<input type="hidden" id="buscadoOculto" name="Nombre" value="" />
+	<button type="submit" id="Btn1" name="Btn1">Buscar por Nombre</button>
 </form>
 <script>
 	$(document).ready(function () {

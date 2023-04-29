@@ -27,8 +27,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcQnVzY2FyRFBJLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/BuscarNombre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcQnVzY2FyTm9tYnJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFecha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcRWRpdGFyRmVjaGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFechaNombre.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcRWRpdGFyRmVjaGFOb21icmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Home/Index.cshtml]

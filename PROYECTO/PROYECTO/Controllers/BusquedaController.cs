@@ -11,9 +11,8 @@ namespace PROYECTO.Controllers
         {
             return View();
         }
-        
 
-
+        //Busqueda Mediante DPI
 
         [HttpPost]
         [Route("BuscarDPI")]
@@ -40,45 +39,105 @@ namespace PROYECTO.Controllers
             return View();
         }
 
+
+
+        //Codigo Busqueda por Nombres
+        //Falta Arreglar Recorrido de Arbol
         [HttpPost]
-        [Route("EditarFecha")]
-        public IActionResult EditarFecha(string DPI, string Nombre, DateTime FechaNueva, DateTime FechaNueva1)
+        [Route("BuscarNombre")]
+        public IActionResult BuscarNombre(string Nombre)
         {
-            DateTime FOficial;
-
-            if (FechaNueva == null)
-            {
-                FOficial = FechaNueva1;
-            }
-            else
-            {
-                FOficial = FechaNueva;
-            }
-
             List<Paciente> LISTADOPAC = new List<Paciente>();
-            var incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
-
-            if (DPI == "")
+            if (Nombre == null)
             {
-                //Falta Crear Metodo Busqueda Nombre
-                incognita = AVL.BusquedaDPI(Nombre, AVL.raiz);
-                incognita.InfoPaciente.ProxConsulta = FOficial;
+                Nombre = "no";
             }
-            else
+            var incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
+            if (incognita == null || Nombre == "no")
             {
-                incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
-                incognita.InfoPaciente.ProxConsulta = FOficial;
+                return View();
             }
-
             LISTADOPAC.Add(incognita.InfoPaciente);
             return View(LISTADOPAC);
         }
 
+        [Route("BuscarNombre")]
+        public IActionResult BuscarNombre()
+        {
+            return View();
+        }
+
+
+
+
+        //Edicion de Fechar mediante DPI
+
+        [HttpPost]
+        [Route("EditarFecha")]
+        public IActionResult EditarFecha(string DPI,DateTime FechaNueva)
+        {
+
+            List<Paciente> LISTADOPAC = new List<Paciente>();
+            var incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
+            int vecesFecha = AVL.ValidacionFechas(FechaNueva, AVL.raiz);
+
+            if (vecesFecha < 12)
+            {
+                   incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
+                   incognita.InfoPaciente.ProxConsulta = FechaNueva;
+            }
+            else
+            {
+                //Me gustaria anadidir como un message box
+            }
+            LISTADOPAC.Add(incognita.InfoPaciente);
+            return View(LISTADOPAC);
+        }
 
         [Route("EditarFecha")]
         public IActionResult EditarFecha()
         {
             return View();
         }
+
+
+        //Edicion de Fechar mediante Nombre
+
+        [HttpPost]
+        [Route("EditarFechaNombre")]
+        public IActionResult EditarFechaNombre(string Nombre, DateTime FechaNueva)
+        {
+
+            List<Paciente> LISTADOPAC = new List<Paciente>();
+            //Tiene que comenzar en otra cosa VAR
+            var incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
+            int vecesFecha = AVL.ValidacionFechas(FechaNueva, AVL.raiz);
+
+            if (vecesFecha < 12)
+            {
+                incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
+                incognita.InfoPaciente.ProxConsulta = FechaNueva;
+            }
+            else
+            {
+                //Me gustaria anadidir como un message box
+            }
+            LISTADOPAC.Add(incognita.InfoPaciente);
+            return View(LISTADOPAC);
+        }
+
+
+        [Route("EditarFechaNombre")]
+        public IActionResult EditarFechaNombre()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
     }
 }

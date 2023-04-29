@@ -44,8 +44,8 @@
 
 }
 
-<form method="post" action="@Url.Action("EditarFecha", "Busqueda")">
-	<table border="1" cellpadding="5" cellspacing="1" >
+<form method="post" action="@Url.Action("EditarFechaNombre", "Busqueda")">
+	<table border="1" cellpadding="5" cellspacing="1">
 		<tr>
 			<td>
 				Dato de Referencia
@@ -61,13 +61,14 @@
 			</td>
 		</tr>
 
+
 		<tr>
 			<td>
-				DPI
+				Nombre
 			</td>
 			<td>
-				<input type="text" id="DPI" name="DPI" />
-				<input type="hidden" id="buscadoOculto" name="DPI" value="" />
+				<input type="text" id="Nombre" name="Nombre" />
+				<input type="hidden" id="buscadoOculto" name="Nombre" value="" />
 			</td>
 			<td>
 				<input type="datetime" id="FechaNueva" name="FechaNueva" />
@@ -80,12 +81,7 @@
 
 	</table>
 	<h4></h4>
-	
 
-	
-
-	
-	
 </form>
 <script>
 	$(document).ready(function () {

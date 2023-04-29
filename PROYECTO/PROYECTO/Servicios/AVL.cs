@@ -8,13 +8,13 @@ namespace PROYECTO.Servicios
 
         public static NodoArbolAVL BusquedaDPI(string buscado, NodoArbolAVL nodoActual)
         {
-            if (nodoActual.InfoPaciente.Num_DPI == buscado)
-            {
-                return nodoActual;
-            }
-            else if (nodoActual == null)
+            if (nodoActual == null)
             {
                 return null;
+            }
+            else if (nodoActual.InfoPaciente.Num_DPI == buscado)
+            {
+                return nodoActual;
             }
             else if (string.Compare(buscado, nodoActual.InfoPaciente.Num_DPI) < 0)
             {
@@ -24,6 +24,43 @@ namespace PROYECTO.Servicios
             {
                 return BusquedaDPI(buscado, nodoActual.derecha);
             }
+        }
+
+        //Arreglar Comparacion, porque solo entra al al hijo Derecho
+        public static NodoArbolAVL BusquedaNombre(string buscado, NodoArbolAVL nodoActual)
+        {
+            if (nodoActual == null)
+            {
+                return null;
+            }
+            else if (nodoActual.InfoPaciente.Nombre_Comp == buscado)
+            {
+                return nodoActual;
+            }
+            else if (string.Compare(buscado, nodoActual.InfoPaciente.Num_DPI) < 0)
+            {
+                return BusquedaNombre(buscado, nodoActual.izquierda);
+            }
+            else
+            {
+                return BusquedaNombre(buscado, nodoActual.derecha);
+            }
+        }
+
+
+        public static int ValidacionFechas(DateTime FechaValidacion, NodoArbolAVL nodoActual)
+        {
+            int contador = 0;
+            List<Paciente> nodosInOrder = new List<Paciente>();
+            nodosInOrder = InOrderAVL(nodoActual);
+            for(int i=0; i<nodosInOrder.Count; i++)
+            {
+                if (nodosInOrder[i].ProxConsulta == FechaValidacion)
+                {
+                    contador++;
+                }
+            }
+            return contador;
         }
 
         public static void InsertarDatosAVL(Paciente InfoPac)
