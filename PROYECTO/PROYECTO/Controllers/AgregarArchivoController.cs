@@ -80,6 +80,7 @@ namespace PROYECTO.Controllers
 
         }
 
+
         [Route("IngresoInformacion")]
         public IActionResult IngresoInformacion()
         {

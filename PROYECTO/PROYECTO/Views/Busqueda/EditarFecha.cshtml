@@ -1,0 +1,114 @@
+﻿@model List<Paciente>
+@{
+	ViewBag.Title = "Editar Fecha Proxima Consulta Pacientes";
+}
+<h1>@ViewData["Title"]</h1>
+
+@if (Model != null)
+{
+	<table class="table table-hover">
+
+		<thead>
+
+			<tr>
+
+				<td>Nombre Completo</td>
+				<td>Numero DPI</td>
+				<td>Edad</td>
+				<td>Telefono</td>
+				<td>Ultima Consulta</td>
+				<td>Proxima Consulta</td>
+				<td>Tratamiento</td>
+				<td>Modalidad</td>
+
+			</tr>
+
+		</thead>
+
+		@foreach (var PacienteActual in Model)
+
+		{
+			<tr>
+				<td>@PacienteActual.Nombre_Comp</td>
+				<td>@PacienteActual.Num_DPI</td>
+				<td>@PacienteActual.Edad</td>
+				<td>@PacienteActual.Telefono</td>
+				<td>@PacienteActual.UltimaConsulta</td>
+				<td>@PacienteActual.ProxConsulta</td>
+				<td>@PacienteActual.Tratamiento</td>
+				<td>@PacienteActual.modalidad</td>
+			</tr>
+
+		}
+	</table>
+
+}
+
+<form method="post" action="@Url.Action("EditarFecha", "Busqueda")">
+	<table>
+
+		<tr>
+			<td>
+				Dato de Referencia
+			</td>
+			<td>
+				Ingresa Dato de Referencia
+			</td>
+			<td>
+				Ingresa Fecha de Nueva Consulta
+			</td>
+			<td>
+				Edita
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				DPI
+			</td>
+			<td>
+				<input type="text" id="DPI" name="DPI" />
+				<input type="hidden" id="buscadoOculto" name="DPI" value="" />
+			</td>
+			<td>
+				<input type="datetime" id="FechaNueva" name="FechaNueva" />
+				<input type="hidden" id="buscadoOculto" name="FechaNueva" value="" />
+			</td>
+			<td>
+				<button type="submit" id="Btn1" name="Btn1">Editar Informacion</button>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Nombre
+			</td>
+			<td>
+				<input type="text" id="Nombre" name="Nombre" />
+				<input type="hidden" id="buscadoOculto" name="Nombre" value="" />
+			</td>
+			<td>
+				<input type="datetime" id="FechaNueva1" name="FechaNueva1" />
+				<input type="hidden" id="buscadoOculto" name="FechaNueva1" value="" />
+			</td>
+			<td>
+				<button type="submit" id="Btn1" name="Btn1">Editar Informacion</button>
+			</td>
+		</tr>
+
+	</table>
+	<h4></h4>
+	
+
+	
+
+	
+	
+</form>
+<script>
+	$(document).ready(function () {
+		$('#Btn1').click(function () {
+			$('#buscadoOculto').val($('#buscado').val());
+		});
+	});
+</script>

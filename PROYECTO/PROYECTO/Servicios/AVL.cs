@@ -6,6 +6,26 @@ namespace PROYECTO.Servicios
     {
       public static NodoArbolAVL raiz { get; set; }
 
+        public static NodoArbolAVL BusquedaDPI(string buscado, NodoArbolAVL nodoActual)
+        {
+            if (nodoActual.InfoPaciente.Num_DPI == buscado)
+            {
+                return nodoActual;
+            }
+            else if (nodoActual == null)
+            {
+                return null;
+            }
+            else if (string.Compare(buscado, nodoActual.InfoPaciente.Num_DPI) < 0)
+            {
+                return BusquedaDPI(buscado, nodoActual.izquierda);
+            }
+            else
+            {
+                return BusquedaDPI(buscado, nodoActual.derecha);
+            }
+        }
+
         public static void InsertarDatosAVL(Paciente InfoPac)
         {
             raiz = Insertardpi(raiz, InfoPac);

@@ -4,26 +4,71 @@
 
 <div class="text-center">
     <h1 class="display-4">Bienvenido a Mente Sana</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
 <table class="table table-hover">
-        <tr>
-            <td>
-                <a asp-action="IngresoInformacion" asp-controller="AgregarArchivo" class="btn btn-primary btn-sm">Agregar Informacion Mediante Archivo</a>
+       
+    <tr>
+        <td>
+            <h2>Centro de Registro de Pacientes</h2>
+        </td>
+        
+    </tr>
+    <tr>
 
-            </td>
-          
+        <tr>
+        <td>
+            <h4>Agrega Pacientes Mendiante Archivo</h4>
+        </td>
             <td>
-            <a asp-action="Manual" asp-controller="AgregarManual" class="btn btn-primary btn-sm">Agregar Informacion Mediante Manualmente</a>
+                <a asp-action="IngresoInformacion" asp-controller="AgregarArchivo" class="btn btn-primary btn-sm">Agregar</a>
             </td>
         </tr>
-        <tr>
+    <tr>
         <td>
-            <a asp-action="IngresoInformacion" asp-controller="AgregarArchivo" class="btn btn-primary btn-sm">Busqueda por Nombre</a>
+            <h4>Agrega Pacientes Manualmente</h4>
+        </td>
+            <td>
+                <a asp-action="Manual" asp-controller="AgregarManual" class="btn btn-primary btn-sm">Agregar</a>
+            </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>Visualizacion Completa de Pacientes</h4>
+        </td>
+             <td>
+            <a asp-action="ImprimirInformacion" asp-controller="VisualizacionArchivos" class="btn btn-primary btn-sm">Visualizar Informacion</a>
+            </td>
+        </tr>
+</table>
+
+
+<h1>&nbsp</h1>
+
+<table class="table table-hover">
+
+    <tr>
+        <td>
+            <h2>Centro de Busqueda de Pacientes</h2>
+        </td>
+
+    </tr>
+    <tr>
+
+    <tr>
+        <td>
+            <h4>Busqueda por Nombre</h4>
         </td>
         <td>
-            <a asp-action="IngresoInformacion" asp-controller="AgregarArchivo" class="btn btn-primary btn-sm">Busqueda por DPI</a>
+            <a asp-action="IngresoInformacion" asp-controller="AgregarArchivo" class="btn btn-primary btn-sm">Buscar</a>
         </td>
-</tr>
+    </tr>
+    <tr>
+        <td>
+            <h4>Busqueda por DPI</h4>
+        </td>
+        <td>
+            <a asp-action="BuscarDPI" asp-controller="Busqueda" class="btn btn-primary btn-sm">Buscar</a>
+        </td>
+    </tr>
 </table>
