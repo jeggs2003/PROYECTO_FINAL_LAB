@@ -47,18 +47,16 @@ namespace PROYECTO.Controllers
         [Route("BuscarNombre")]
         public IActionResult BuscarNombre(string Nombre)
         {
-            List<Paciente> LISTADOPAC = new List<Paciente>();
-            if (Nombre == null)
+            
+            List<Paciente> listaordenada = new List<Paciente>();
+            Paciente Encontradop = BusquedaPac(Nombre);
+
+            if (Encontradop != null)
             {
-                Nombre = "no";
+                listaordenada.Add(Encontradop);
+                return View(listaordenada);
             }
-            var incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
-            if (incognita == null || Nombre == "no")
-            {
-                return View();
-            }
-            LISTADOPAC.Add(incognita.InfoPaciente);
-            return View(LISTADOPAC);
+           return View(listaordenada);
         }
 
         [Route("BuscarNombre")]
@@ -67,6 +65,21 @@ namespace PROYECTO.Controllers
             return View();
         }
 
+        public static Paciente BusquedaPac(string nom)
+        {
+            List<Paciente> listaordenada = new List<Paciente>();
+            
+            listaordenada = AVL.InOrderAVL(AVL.raiz);
+
+            for (int i = 0; i < listaordenada.Count; i++)
+            {
+                if (listaordenada[i].Nombre_Comp == nom)
+                {
+                    return listaordenada[i];
+                }
+            }
+            return null;
+        }
 
 
 
@@ -109,21 +122,31 @@ namespace PROYECTO.Controllers
         {
 
             List<Paciente> LISTADOPAC = new List<Paciente>();
-            //Tiene que comenzar en otra cosa VAR
-            var incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
-            int vecesFecha = AVL.ValidacionFechas(FechaNueva, AVL.raiz);
-
-            if (vecesFecha < 12)
+            
+            var BusquePac = BusquedaPac(Nombre);
+            if (BusquePac != null)
             {
-                incognita = AVL.BusquedaNombre(Nombre, AVL.raiz);
-                incognita.InfoPaciente.ProxConsulta = FechaNueva;
+                int vecesFecha = AVL.ValidacionFechas(FechaNueva, AVL.raiz);
+                string dpi = BusquePac.Num_DPI;
+                var incognita = AVL.BusquedaDPI(dpi, AVL.raiz);
+
+                if (vecesFecha < 12)
+                {
+                    incognita = AVL.BusquedaDPI(dpi, AVL.raiz);
+                    incognita.InfoPaciente.ProxConsulta = FechaNueva;
+                }
+                else
+                {
+                    //Me gustaria anadidir como un message box
+                }
+                LISTADOPAC.Add(incognita.InfoPaciente);
+                return View(LISTADOPAC);
             }
             else
             {
-                //Me gustaria anadidir como un message box
+                return View();
             }
-            LISTADOPAC.Add(incognita.InfoPaciente);
-            return View(LISTADOPAC);
+            
         }
 
 

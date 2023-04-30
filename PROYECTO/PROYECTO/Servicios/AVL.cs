@@ -37,7 +37,7 @@ namespace PROYECTO.Servicios
             {
                 return nodoActual;
             }
-            else if (string.Compare(buscado, nodoActual.InfoPaciente.Num_DPI) < 0)
+            else if (string.Compare(buscado, nodoActual.InfoPaciente.Nombre_Comp) < 0)
             {
                 return BusquedaNombre(buscado, nodoActual.izquierda);
             }
