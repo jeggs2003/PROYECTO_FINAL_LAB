@@ -26,7 +26,7 @@ namespace PROYECTO.Servicios
             }
         }
 
-        //Arreglar Comparacion, porque solo entra al al hijo Derecho
+        
         public static NodoArbolAVL BusquedaNombre(string buscado, NodoArbolAVL nodoActual)
         {
             if (nodoActual == null)

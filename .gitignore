@@ -1,0 +1,8 @@
+/Generics/Generics/bin/Debug/net6.0
+/Generics/.vs
+/Generics/Generics/obj
+
+*.dll
+*.exe
+*.suo
+/bin

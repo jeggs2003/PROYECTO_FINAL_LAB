@@ -42,7 +42,7 @@ namespace PROYECTO.Controllers
 
 
         //Codigo Busqueda por Nombres
-        //Falta Arreglar Recorrido de Arbol
+        
         [HttpPost]
         [Route("BuscarNombre")]
         public IActionResult BuscarNombre(string Nombre)
