@@ -8,7 +8,8 @@ namespace PROYECTO.Models
         public string Num_DPI { get; set; }
         public int Edad { get; set; }
         public int Telefono { get; set; }
-        public DateTime UltimaConsulta { get; set; }
+
+		public DateTime UltimaConsulta { get; set; }
         public DateTime ProxConsulta { get; set; }
         public string Tratamiento { get; set; }
         public string modalidad { get; set; }

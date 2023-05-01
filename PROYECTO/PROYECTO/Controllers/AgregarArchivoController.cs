@@ -21,7 +21,7 @@ namespace PROYECTO.Controllers
             pac.Num_DPI = DPI;
             pac.Edad = Edad;
             pac.Telefono = Tel;
-            pac.UltimaConsulta = Fu;
+			pac.UltimaConsulta = Fu;
             pac.ProxConsulta = Fp;
             pac.Tratamiento = Tratamiento;
             pac.modalidad = Modalidad;
