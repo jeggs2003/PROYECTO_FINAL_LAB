@@ -29,13 +29,29 @@ namespace PROYECTO.Controllers
             return View(listaPacientes);
         }
 
-        [HttpPost]
+       
         [Route("Listado2")]
         public IActionResult Listado2()
         {
             List<Paciente> listaordenada = new List<Paciente>();
+            List<Paciente> listaPacientes = new List<Paciente>();
             listaordenada = AVL.InOrderAVL(AVL.raiz);
-            return View(listaordenada);
+            DateTime date = DateTime.Now;
+            DateTime Defecto = new DateTime(0001, 01, 01, 00, 00, 00);
+            for (int i = 0; i < listaordenada.Count(); i++)
+            {
+                if (listaordenada[i].Tratamiento.Contains("cognitivo") || listaordenada[i].Tratamiento.Contains("conductual"))
+                {
+                    if ((date - listaordenada[i].UltimaConsulta).Days >= 31)
+                    {
+                        if (listaordenada[i].ProxConsulta == Defecto)
+                        {
+                            listaPacientes.Add(listaordenada[i]);
+                        }
+                    }
+                }
+            }
+            return View(listaPacientes);
         }
 
         [HttpPost]
