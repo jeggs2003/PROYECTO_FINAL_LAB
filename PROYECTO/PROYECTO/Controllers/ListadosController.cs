@@ -19,11 +19,11 @@ namespace PROYECTO.Controllers
             {
                 if (listaordenada[i].Tratamiento == "") {
                     if ((date - listaordenada[i].UltimaConsulta).Days >= 180){
-
-						listaPacientes.Add(listaordenada[i]);
+						if(Defecto== listaordenada[i].ProxConsulta)
+						{
+                            listaPacientes.Add(listaordenada[i]);
+                        }
 					}
-					
-                  
                 }
             } 
             return View(listaPacientes);
@@ -44,36 +44,16 @@ namespace PROYECTO.Controllers
                 {
                     if ((date - listaordenada[i].UltimaConsulta).Days >= 30)
                     {
-						listaPacientes.Add(listaordenada[i]);
+						if (listaordenada[i].ProxConsulta == Defecto)
+						{
+							listaPacientes.Add(listaordenada[i]);
+						}
 					}
-
-					if (listaordenada[i].ProxConsulta == Defecto)
-                        {
-                            listaPacientes.Add(listaordenada[i]);
-                        }
-                    
                 }
             }
             return View(listaPacientes);
         }
 
-        [HttpPost]
-        [Route("Listado3")]
-        public IActionResult Listado3()
-        {
-            List<Paciente> listaordenada = new List<Paciente>();
-            listaordenada = AVL.InOrderAVL(AVL.raiz);
-            return View(listaordenada);
-        }
-
-        [HttpPost]
-        [Route("Listado4")]
-        public IActionResult Listado4()
-        {
-            List<Paciente> listaordenada = new List<Paciente>();
-            listaordenada = AVL.InOrderAVL(AVL.raiz);
-            return View(listaordenada);
-        }
 
         [Route("ListadoGesaltica")]
 		public IActionResult ListadoGesaltica()
@@ -89,14 +69,11 @@ namespace PROYECTO.Controllers
 				{
 					if ((date - listaordenada[i].UltimaConsulta).Days >= 60)
 					{
-						listaPacientes.Add(listaordenada[i]);
-
-					}
-					if (listaordenada[i].ProxConsulta == Defecto)
+						if (listaordenada[i].ProxConsulta == Defecto)
 						{
 							listaPacientes.Add(listaordenada[i]);
 						}
-					
+					}	
 				}
 			}
 			return View(listaPacientes);
@@ -117,14 +94,11 @@ namespace PROYECTO.Controllers
 				{
 					if ((date - listaordenada[i].UltimaConsulta).Days >= 14)
 					{
-						listaPacientes.Add(listaordenada[i]);
-					}
-
-					if (listaordenada[i].ProxConsulta == Defecto)
+						if (listaordenada[i].ProxConsulta == Defecto)
 						{
 							listaPacientes.Add(listaordenada[i]);
 						}
-					
+					}	
 				}
 			}
 			return View(listaPacientes);

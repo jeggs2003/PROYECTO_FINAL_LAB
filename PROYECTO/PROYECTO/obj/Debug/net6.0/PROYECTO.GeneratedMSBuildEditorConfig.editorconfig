@@ -5,85 +5,84 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PROYECTO
 build_property.RootNamespace = PROYECTO
-build_property.ProjectDir = C:\Users\paolo\Downloads\PROYECTO_FINAL_LAB\PROYECTO\PROYECTO\
+build_property.ProjectDir = C:\Users\javie\Documents\PROYECTO_FINAL_LAB\PROYECTO\PROYECTO\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\paolo\Downloads\PROYECTO_FINAL_LAB\PROYECTO\PROYECTO
+build_property.MSBuildProjectDirectory = C:\Users\javie\Documents\PROYECTO_FINAL_LAB\PROYECTO\PROYECTO
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/AgregarArchivo/IngresoInformacion.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/AgregarArchivo/IngresoInformacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdyZWdhckFyY2hpdm9cSW5ncmVzb0luZm9ybWFjaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/AgregarManual/Manual.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/AgregarManual/Manual.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdyZWdhck1hbnVhbFxNYW51YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/BuscarDPI.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/BuscarDPI.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcQnVzY2FyRFBJLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/BuscarNombre.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/BuscarNombre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcQnVzY2FyTm9tYnJlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFecha.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFecha.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcRWRpdGFyRmVjaGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFechaNombre.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Busqueda/EditarFechaNombre.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVzcXVlZGFcRWRpdGFyRmVjaGFOb21icmUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Home/Index.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Home/Privacy.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/Listado1.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/Listado1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFkb3NcTGlzdGFkbzEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/Listado2.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/Listado2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFkb3NcTGlzdGFkbzIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/ListadoGesaltica.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/ListadoGesaltica.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFkb3NcTGlzdGFkb0dlc2FsdGljYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/ListadoOtros.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Listados/ListadoOtros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlzdGFkb3NcTGlzdGFkb090cm9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/Error.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/VisualizacionArchivos/ImprimirInformacion.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/VisualizacionArchivos/ImprimirInformacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzdWFsaXphY2lvbkFyY2hpdm9zXEltcHJpbWlySW5mb3JtYWNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/_ViewImports.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/_ViewStart.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/paolo/Downloads/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/_Layout.cshtml]
+[C:/Users/javie/Documents/PROYECTO_FINAL_LAB/PROYECTO/PROYECTO/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4l55dvds5y
