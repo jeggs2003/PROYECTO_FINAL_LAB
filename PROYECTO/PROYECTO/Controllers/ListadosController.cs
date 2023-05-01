@@ -72,5 +72,53 @@ namespace PROYECTO.Controllers
             return View(listaordenada);
         }
 
-    }
+		[Route("ListadoGesaltica")]
+		public IActionResult ListadoGesaltica()
+		{
+			List<Paciente> listaordenada = new List<Paciente>();
+			List<Paciente> listaPacientes = new List<Paciente>();
+			listaordenada = AVL.InOrderAVL(AVL.raiz);
+			DateTime date = DateTime.Now;
+			DateTime Defecto = new DateTime(0001, 01, 01, 00, 00, 00);
+			for (int i = 0; i < listaordenada.Count(); i++)
+			{
+				if (listaordenada[i].Tratamiento.Contains("gesáltica"))
+				{
+					if ((date - listaordenada[i].UltimaConsulta).Days >= 60)
+					{
+						if (listaordenada[i].ProxConsulta == Defecto)
+						{
+							listaPacientes.Add(listaordenada[i]);
+						}
+					}
+				}
+			}
+			return View(listaPacientes);
+		}
+
+		[Route("ListadoOtros")]
+		public IActionResult ListadoOtros()
+		{
+			List<Paciente> listaordenada = new List<Paciente>();
+			List<Paciente> listaPacientes = new List<Paciente>();
+			listaordenada = AVL.InOrderAVL(AVL.raiz);
+			DateTime date = DateTime.Now;
+			DateTime Defecto = new DateTime(0001, 01, 01, 00, 00, 00);
+			for (int i = 0; i < listaordenada.Count(); i++)
+			{
+				if (!listaordenada[i].Tratamiento.Contains("gesáltica") || !listaordenada[i].Tratamiento.Contains("cognitivo") || !listaordenada[i].Tratamiento.Contains("conductual"))
+				{
+					if ((date - listaordenada[i].UltimaConsulta).Days >= 14)
+					{
+						if (listaordenada[i].ProxConsulta == Defecto)
+						{
+							listaPacientes.Add(listaordenada[i]);
+						}
+					}
+				}
+			}
+			return View(listaPacientes);
+		}
+
+	}
 }
