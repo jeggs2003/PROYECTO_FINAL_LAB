@@ -6,44 +6,44 @@ namespace PROYECTO.Servicios
     {
       public static NodoArbolAVL raiz { get; set; }
 
-        public static NodoArbolAVL BusquedaDPI(string buscado, NodoArbolAVL nodoActual)
+        public static NodoArbolAVL BusquedaDPI(string dpi, NodoArbolAVL nodoActual)
         {
             if (nodoActual == null)
             {
                 return null;
             }
-            else if (nodoActual.InfoPaciente.Num_DPI == buscado)
+            else if (nodoActual.InfoPaciente.Num_DPI == dpi)
             {
                 return nodoActual;
             }
-            else if (string.Compare(buscado, nodoActual.InfoPaciente.Num_DPI) < 0)
+            else if (string.Compare(dpi, nodoActual.InfoPaciente.Num_DPI) < 0)
             {
-                return BusquedaDPI(buscado, nodoActual.izquierda);
+                return BusquedaDPI(dpi, nodoActual.izquierda);
             }
             else
             {
-                return BusquedaDPI(buscado, nodoActual.derecha);
+                return BusquedaDPI(dpi, nodoActual.derecha);
             }
         }
 
         
-        public static NodoArbolAVL BusquedaNombre(string buscado, NodoArbolAVL nodoActual)
+        public static NodoArbolAVL BusquedaNombre(string nombre, NodoArbolAVL nodoActual)
         {
             if (nodoActual == null)
             {
                 return null;
             }
-            else if (nodoActual.InfoPaciente.Nombre_Comp == buscado)
+            else if (nodoActual.InfoPaciente.Nombre_Comp == nombre)
             {
                 return nodoActual;
             }
-            else if (string.Compare(buscado, nodoActual.InfoPaciente.Nombre_Comp) < 0)
+            else if (string.Compare(nombre, nodoActual.InfoPaciente.Nombre_Comp) < 0)
             {
-                return BusquedaNombre(buscado, nodoActual.izquierda);
+                return BusquedaNombre(nombre, nodoActual.izquierda);
             }
             else
             {
-                return BusquedaNombre(buscado, nodoActual.derecha);
+                return BusquedaNombre(nombre, nodoActual.derecha);
             }
         }
 
@@ -130,32 +130,32 @@ namespace PROYECTO.Servicios
             return ObtenerAltura(nodo.izquierda) - ObtenerAltura(nodo.derecha);
         }
 
-        public static List<Paciente> InOrderAVL(NodoArbolAVL nodoActual)
+        public static List<Paciente> InOrderAVL(NodoArbolAVL nodoRaiz)
         {
             List<Paciente> nodosInOrder = new List<Paciente>();
 
-            if (nodoActual != null)
+            if (nodoRaiz != null)
             {
-                nodosInOrder.AddRange(InOrderAVL(nodoActual.izquierda));
-                nodosInOrder.Add(nodoActual.InfoPaciente);
-                nodosInOrder.AddRange(InOrderAVL(nodoActual.derecha));
+                nodosInOrder.AddRange(InOrderAVL(nodoRaiz.izquierda));
+                nodosInOrder.Add(nodoRaiz.InfoPaciente);
+                nodosInOrder.AddRange(InOrderAVL(nodoRaiz.derecha));
             }
 
             return nodosInOrder;
         }
 
-        private static NodoArbolAVL RotacionDerecha(NodoArbolAVL y)
+        private static NodoArbolAVL RotacionDerecha(NodoArbolAVL nodoRota)
         {
-            NodoArbolAVL x = y.izquierda;
-            NodoArbolAVL T2 = x.derecha;
+            NodoArbolAVL NodoIzq = nodoRota.izquierda;
+            NodoArbolAVL T2 = NodoIzq.derecha;
 
-            x.derecha = y;
-            y.izquierda = T2;
+            NodoIzq.derecha = nodoRota;
+            nodoRota.izquierda = T2;
 
-            y.Altura = 1 + Math.Max(ObtenerAltura(y.izquierda), ObtenerAltura(y.derecha));
-            x.Altura = 1 + Math.Max(ObtenerAltura(x.izquierda), ObtenerAltura(x.derecha));
+            nodoRota.Altura = 1 + Math.Max(ObtenerAltura(nodoRota.izquierda), ObtenerAltura(nodoRota.derecha));
+            NodoIzq.Altura = 1 + Math.Max(ObtenerAltura(NodoIzq.izquierda), ObtenerAltura(NodoIzq.derecha));
 
-            return x;
+            return NodoIzq;
         }
         private static NodoArbolAVL RotacionIzquierda(NodoArbolAVL x)
         {
