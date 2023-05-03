@@ -1,0 +1,75 @@
+Juan Pérez,1234567890123,35,12345678,2022-05-01 14:30:00,0001-01-01 00:00:00,Paciente presentó síntomas de ansiedad y fue diagnosticado con trastorno de ansiedad generalizada. Se encuentra en tratamiento con terapia cognitivo-conductual.,Precencial
+María García,2345678901234,42,23456789,2023-02-15 8:00:00,2023-06-15 8:00:00,Paciente fue diagnosticada con depresión mayor y se encuentra en tratamiento con antidepresivos y terapia gestáltica.,Precencial
+Pedro López,3456789012345,25,34567890,2023-03-30 16:00:00,2023-05-30 16:30:00,Paciente menor de edad diagnosticado con trastorno por déficit de atención e hiperactividad. Se encuentra en tratamiento con medicación y terapia conductual.,Presencial
+Ana Torres,4567890123456,30,45678901,2022-05-01 09:30:00,0001-01-01 00:00:00,Paciente presentó síntomas de ansiedad y estrés laboral. Se encuentra en tratamiento con logoterapia y técnicas de relajación.,Virtual
+José Rodríguez,5678901234567,50,56789012,2023-01-20 12:00:00,2023-05-20 12:00:00,Paciente diagnosticado con trastorno obsesivo-compulsivo. Se encuentra en tratamiento con terapia cognitivo-conductual y medicación.,Virtual
+Luisa Martínez,6789012345678,28,67890123,2022-04-01 11:00:00,0001-01-01 00:00:00,Paciente presentó síntomas de tristeza y falta de energía. Fue diagnosticada con depresión mayor y se encuentra en tratamiento con antidepresivos y terapia gestáltica.,Virtual
+Sofía Hernández,7890123456789,18,78901234,2023-04-01 8:00:00,2023-06-03 8:00:00,Paciente menor de edad diagnosticada con trastorno de ansiedad social. Se encuentra en tratamiento con logoterapia y técnicas de exposición.,Virtual
+Carlos Gómez,8901234567890,38,89012345,2022-04-25 10:00:00,0001-01-01 00:00:00,Paciente presentó síntomas de estrés postraumático. Se encuentra en tratamiento con terapia cognitivo-conductual y técnicas de desensibilización y reprocesamiento por movimientos oculares.,Presencial
+Marcela Ramírez,9012345678901,29,90123456,2021-12-30 14:00:00,2022-06-30 9:00:00,,Virtual
+Pedro Rodriguez,2456789012345,16,76543210,2022-11-30 8:00:00,2023-05-30 8:00:00,,Presencial
+Ana Lopez,4578890123456,45,65432109,2022-09-10 15:30:00,0001-01-01,,Presencial
+Luis Gudiel,7263546781253,30,56435675,2022-10-15 16:20:00,0001-01-01 00:00:00,,Presencial
+Alberto Gimenez,2536712345097,15,56432765,2022-09-15 17:25:00,0001-01-01 00:00:00,,Presencial
+Daniel Rodriguez,8750348963582,31,21493080,2022-11-09 21:56:19,0001-01-01 00:00:00,,Presencial
+Gabriela Rivera,2917566373758,25,21611703,2023-09-24 02:17:03,2023-10-15 20:50:00,Paciente presenta trantorno de ansiedad intensa. Se encuentra en tratamiento de terapia cognitivo-conductual,Virtual
+Fernando Sánchez,6059378683903,48,53361332,2023-08-15 06:32:12,2023-09-15 15:40:00,Paciente presenta un transtorno de ira compulsiva. Se encuentra en tratamiento de terapia gestálica,Hibrido
+Andrea Torres,6843953697941,56,23113329,2022-07-28 11:51:48,2023-08-25 13:40:00,,Virtual
+Luisa Mendoza,8806729345752,43,28572251,2022-11-12 19:06:07,0001-01-01 00:00:00,,Hibrido
+Jorge Aguilar,7710113652348,66,30347124,2022-07-23 17:42:39,2023-08-15 14:25:00,Presenta un sintoma total de desesperación. Se encuentra en logoterapia,Presencial
+Ana Martinez,5994768541538,27,44765292,2023-08-31 01:39:02,2023-10-15 20:40:00,,Hibrido
+Roberto Hernández,8820342703369,51,11233881,2023-09-07 12:23:57,0001-01-01 00:00:00,,Virtual
+Laura Flores,7855426882529,37,10595254,2022-10-04 13:07:45,0001-01-01 00:00:00,,Hibrido
+Carlos González,4372049035439,63,59810917,2022-12-18 00:58:29,0001-01-01 00:00:00,Depresión mayor.Terapia cognitivo-conductual,Presencial
+Martina García,1978536301857,35,43473152,2023-10-01 14:24:31,2023-11-15 20:30:00,,Hibrido
+Samuel Flores,5216279918363,53,48294284,2022-06-07 19:33:15,0001-01-01 00:00:00,Trastorno obsesivo-compulsivo.Terapia cognitivo-conductual,Virtual
+Paola Torres,8682252108435,41,23649167,2022-09-18 10:56:40,0001-01-01 00:00:00,Depresión mayor.Terapia cognitivo-conductual,Presencial
+Paola Cosillo,8682252100101,41,23649167,2023-09-18 10:56:40,0001-01-01 00:00:00,Trastorno de ansiedad generalizada.Terapia cognitivo-conductual,Virtual
+Juan Ramirez,9893265871456,28,19572463,2023-07-05 15:20:12,0001-01-01 00:00:00,,Presencial
+María López,7745036910228,55,31897256,2023-11-30 08:45:30,0001-01-01 00:00:00,Trastorno de ansiedad social.Terapia gestáltica,Hibrido
+Carlos García,6982134547123,37,12896345,2022-10-22 09:14:56,0001-01-01 00:00:00,Trastorno por estrés postraumático.Terapia gestáltica,Presencial
+Ana Rodríguez,5918203660124,63,14785962,2022-08-17 14:30:48,0001-01-01 00:00:00,Trastorno de ansiedad generalizada.Terapia gestáltica,Presencial
+Luisa Martínez,3169407653987,42,21345789,2023-09-01 11:25:03,0001-01-01 00:00:00,,Presencial
+Pedro Sanchez,4298675329415,35,15672349,2023-07-19 16:52:17,0001-01-01 00:00:00,Trastorno de ansiedad social.Terapia gestáltica,Virtual
+Laura Mendoza,8724631890356,48,19873456,2022-10-11 13:10:24,0001-01-01 00:00:00,Trastorno de ansiedad generalizada.Terapia gestáltica,Virtual
+Andrés Romero,5574360281945,30,22547891,2022-07-31 17:40:57,0001-01-01 00:00:00,Trastorno por estrés postraumático.Terapia gestáltica,Hibrido
+Diana Morales,6920438576142,51,16589023,2023-08-28 12:05:39,0001-01-01 00:00:00,,Presencial
+Alejandro Castillo,4172385061496,29,19876543,2023-07-14 09:48:21,0001-01-01 00:00:00,Trastorno por estrés postraumático.Terapia gestáltica,Presencial
+Gabriela Vargas,7894206135721,44,24907815,2023-09-24 08:15:56,0001-01-01 00:00:00,,Hibrido
+Oscar Ríos,9250364728194,39,17625430,2022-08-07 14:37:10,0001-01-01 00:00:00,,Presencial
+Sofía Paredes,6305947183602,57,28451790,2022-11-10 10:30:02,0001-01-01 00:00:00,Trastorno de ansiedad generalizada.Terapia gestáltica,Hibrido
+Diego Castro,8716924058315,33,14657829,2022-07-26 15:55:43,0001-01-01 00:00:00,Trastorno por estrés postraumático.Terapia gestáltica,Presencial
+Maria Rodriguez,2345678910349,29,23456789,2022-12-02 09:00:00,2023-05-15 11:00:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual,.Presencial
+Carlos Gonzalez,3456789010940,45,34567890,2022-10-10 16:30:00,2023-05-08 16:00:00,Depresión mayor. Terapia cognitivo-conductual.,Presencial
+Laura Torres,4567890130101,38,45678901,2022-09-15 14:00:00,0001-01-01 00:00:00,Trastorno por estrés postraumático. Terapia gestáltica.,Presencial
+Pedro Jimenez,5678901270101,42,56789012,2022-11-20 11:30:00,2023-06-05 09:00:00,Trastorno bipolar. Terapia psicodinamica.,Presencial
+Sofia Diaz,6789012390101,27,67890123,2022-12-01 15:00:00,2023-05-20 16:00:00,Trastorno de ansiedad generalizada. Terapia cognitivo-conductual.,Presencial
+Manuel Sanchez,7890123430101,32,78901234,2022-11-05 10:00:00,2023-06-08 12:30:00,Depresión mayor. Terapia cognitivo-conductual.,Presencial
+Luisa Gomez,8901234560101,33,89012345,2022-10-15 08:30:00,2023-05-22 09:30:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual.,Presencial
+Jorge Perez,9012345660201,51,90123456,2022-12-15 12:00:00,2023-05-12 11:00:00,Depresión mayor. Terapia cognitivo-conductual.,Presencial
+Ana Martinez,0123456780104,19,01234567,2022-09-25 14:30:00,0001-01-01 00:00:00,Trastorno de ansiedad generalizada. Terapia gestáltica.,Presencial
+Fernando Castro,2345678050302,25,23456780,2022-11-25 16:00:00,2023-05-27 17:00:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual.,Presencial
+Carla Soto,3456789150101,29,34567891,2022-12-20 11:00:00,2023-05-17 13:30:00,Trastorno por estrés postraumático. Terapia gestáltica.,Presencial
+Raul Diaz,4567890250101,36,45678902,2022-11-10 15:00:00,2023-05-10 16:00:00,Trastorno de ansiedad generalizada. Terapia cognitivo-conductual.,Presencial
+Pablo Vargas,5678901360101,48,56789013,2022-10-20 14:30:00,2023-05-25 15:30:00,Trastorno depresivo mayor. Terapia psicodinamica.,Presencial
+Sara Ramirez,6789012430201,23,67890124,2022-12-05 09:30:00,2023-05-19 12:00:00,Trastorno de ansiedad social. Terapia cognitivo-conductual.,Presencial
+Diego Hernandez,7890123540106,42,78901235,2022-11-29 12:30:00,2023-06-12 13:00:00,Trastorno de estrés postraumático. Terapia gestáltica.,Hibrido
+Natalia Chavez,8901234680101,31,89012346,2022-09-30 13:00:00,0001-01-01 00:00:00,Trastorno de ansiedad generalizada. Terapia gestáltica.,Hibrido
+Hugo Reyes,9012345790701,27,90123457,2022-11-17 10:00:00,2023-05-24 11:30:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual,Presencial
+Marcela Ortiz,12345679901008,29,12345679,2022-10-25 16:00:00,2023-06-02 10:00:00,Trastorno depresivo mayor. Terapia psicodinamica.,Hibrido
+Javier Mendoza,3456789290102,34,34567892,2022-12-13 11:00:00,2023-05-29 09:00:00,Trastorno de ansiedad social. Terapia gestáltica.,Hibrido
+Diana Rivera,4567890370105,26,76297543,2022-09-20 10:30:00,0001-01-01 00:00:00,Trastorno depresivo mayor. Terapia gestáltica.,Hibrido
+Miguel Flores,567890142201,41,56789014,2022-11-22 13:30:00,2023-06-03 15:30:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual.,Presencial
+Sofía Garcia,123456731602,16,12345673,2022-11-15 15:00:00,2023-05-16 16:00:00,Trastorno de ansiedad generalizada. Terapia cognitivo-conductual.,Virtual
+Juan Torres,2345678590101,13,23456785,2022-10-12 14:30:00,2023-05-11 15:30:00,Trastorno depresivo mayor. Terapia psicodinamica.,Virtual
+Andrea Gonzalez,3456789650101,17,34567896,2022-12-15 09:30:00,2023-05-19 12:00:00,Trastorno de ansiedad social. Terapia cognitivo-conductual.,Virtual
+Luisa Fernandez,4567890790101,14,45678907,2022-11-12 12:30:00,2023-06-01 13:00:00,Trastorno de estrés postraumático. Terapia gestáltica.,Hibrido
+Pedro Ramirez,5678901860101,16,56789018,2022-09-28 13:00:00,2023-06-15 00:00:00,Trastorno de ansiedad generalizada. Terapia gestáltica.,Hibrido
+Javier Torres,6789012940101,15,67890129,2022-11-14 10:00:00,2023-05-21 11:30:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual.,Virtual
+Ana Maria Lopez,7890124000101,18,78901240,2022-10-23 16:00:00,2023-06-08 10:00:00,Trastorno depresivo mayor. Terapia psicodinamica.,Hibrido
+Carla Gomez,8901235140101,17,89012351,2022-11-06 09:30:00,2023-06-14 13:30:00,Trastorno de ansiedad generalizada. Terapia cognitivo-conductual.,Virtual
+Juan Pablo Ruiz,9012346230202,13,90123462,2022-12-20 11:00:00,2023-05-23 09:00:00,Trastorno de ansiedad social. Terapia gestáltica.,Hibrido
+Diego Soto,1234568450106,15,12345684,2022-09-16 10:30:00,2023-05-17 00:00:00,Trastorno depresivo mayor. Terapia gestáltica.,Virtual
+Mariana Chavez,2345679650108,16,23456796,2022-11-29 13:30:00,2023-06-05 15:30:00,Trastorno obsesivo-compulsivo. Terapia cognitivo-conductual.,Virtual
+Isabella Ramirez,3456789700109,12,34567897,2022-12-15 16:00:00,2023-05-22 17:00:00,Trastorno de ansiedad generalizada. Terapia cognitivo-conductual.,Virtual
+Jorge Lopez,4567891800101,17,45678918,2022-10-16 12:30:00,2023-05-25 14:00:00,Trastorno de ansiedad social. Terapia gestáltica.,Hibrido
