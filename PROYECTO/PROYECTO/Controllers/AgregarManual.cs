@@ -11,6 +11,7 @@ namespace PROYECTO.Controllers
         [Route("Registro")]
         public IActionResult Manual(Paciente paci)
         {
+            
             if (!ModelState.IsValid)
             {
                 return View(paci);

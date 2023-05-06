@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using PROYECTO.Models;
 using PROYECTO.Servicios;
@@ -93,18 +94,24 @@ namespace PROYECTO.Controllers
             List<Paciente> LISTADOPAC = new List<Paciente>();
             var incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
             int vecesFecha = AVL.ValidacionFechas(FechaNueva, AVL.raiz);
-
-            if (vecesFecha < 12)
+            try
             {
-                   incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
-                   incognita.InfoPaciente.ProxConsulta = FechaNueva;
+                if (vecesFecha < 12)
+                {
+                    incognita = AVL.BusquedaDPI(DPI, AVL.raiz);
+                    incognita.InfoPaciente.ProxConsulta = FechaNueva;
+                }
+                else
+                {
+                    ViewBag.mensaje = "Sin fechas disponibles este dia";
+                }
+                LISTADOPAC.Add(incognita.InfoPaciente);
+                return View(LISTADOPAC);
             }
-            else
+            catch (Exception e)
             {
-                //Me gustaria anadidir como un message box
+                return View();
             }
-            LISTADOPAC.Add(incognita.InfoPaciente);
-            return View(LISTADOPAC);
         }
 
         [Route("EditarFecha")]
@@ -137,7 +144,7 @@ namespace PROYECTO.Controllers
                 }
                 else
                 {
-                    //Me gustaria anadidir como un message box
+                    ViewBag.mensaje = "Sin fechas disponibles este dia";
                 }
                 LISTADOPAC.Add(incognita.InfoPaciente);
                 return View(LISTADOPAC);
